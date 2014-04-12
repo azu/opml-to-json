@@ -1,30 +1,35 @@
 {
-    "name": "opml-to-json",
-    "description": "convert opml to json.",
-    "keywords": ["json", "xml", "opml", "converter"],
-    "version": "0.0.1",
-    "homepage": "https://github.com/azu/opml-to-json/",
-    "repository": {
-        "url": "git://github.com/azu/opml-to-json.git"
-    },
-    "main": "index.js",
-    "scripts": {
-        "test": "mocha test/*.js"
-    },
-    "directories": {
-        "test": "test/"
-    },
-    "author": "azu",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/azu/opml-to-json/issues"
-    },
-    "dependencies": {
-        "opmlparser": "^0.6.0"
-    },
-    "devDependencies": {
-        "intelli-espower-loader": "0.0.7",
-        "mocha": "^1.18.2",
-        "power-assert": "^0.6.1"
-    }
+  "name": "opml-to-json",
+  "description": "convert opml to json.",
+  "keywords": [
+    "json",
+    "xml",
+    "opml",
+    "converter"
+  ],
+  "version": "0.0.2",
+  "homepage": "https://github.com/azu/opml-to-json/",
+  "repository": {
+    "url": "git://github.com/azu/opml-to-json.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "directories": {
+    "test": "test/"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/opml-to-json/issues"
+  },
+  "dependencies": {
+    "opmlparser": "^0.6.0"
+  },
+  "devDependencies": {
+    "intelli-espower-loader": "0.0.7",
+    "mocha": "^1.18.2",
+    "power-assert": "^0.6.1"
+  }
 }
