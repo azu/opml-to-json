@@ -10,6 +10,27 @@ npm install opml-to-json
 
 ## Usage
 
+Example OPML file.
+
+``` xml
+<?xml version="1.0" encoding="utf-8"?>
+<opml version="1.0">
+  <head>
+    <title>title</title>
+    <expansionState>0,2</expansionState>
+  </head>
+  <body>
+    <outline text="H1">
+      <outline text="H2 Text"/>
+      <outline text="H2">
+        <outline text="text"/>
+      </outline>
+    </outline>
+    <outline text="H1 text"/>
+  </body>
+</opml>
+```
+
 ```js
 opmlToJSON(xmlString, function (error, json) {
     var expected = {
