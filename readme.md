@@ -1,4 +1,4 @@
-# opml-to-json
+# opml-to-json [![Build Status](https://travis-ci.org/azu/opml-to-json.svg)](https://travis-ci.org/azu/opml-to-json)
 
 Convert OPML to JSON(JavaScript Object).
 
