@@ -7,7 +7,7 @@
     "opml",
     "converter"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/azu/opml-to-json/",
   "repository": {
     "url": "git://github.com/azu/opml-to-json.git"
