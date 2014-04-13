@@ -63,7 +63,7 @@ module.exports = function (xml, callback) {
         }, [
             { 'title': this.meta.title || 'root', '#id': 0, children: {} }
         ]);
-        callback(null, flatJSON(stack[0]));
+        callback(null, flatJSON(stack.pop()));
     });
 
     opmlparser.end(xml);
