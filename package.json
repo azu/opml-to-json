@@ -19,6 +19,9 @@
   "author": "azu",
   "main": "lib/opml-to-json.js",
   "types": "lib/opml-to-json.d.ts",
+  "files": [
+    "lib"
+  ],
   "directories": {
     "test": "test/"
   },
