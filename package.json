@@ -1,6 +1,6 @@
 {
   "name": "opml-to-json",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "convert opml to json.",
   "keywords": [
     "json",
