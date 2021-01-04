@@ -32,20 +32,26 @@ Example OPML file.
 ```
 
 ```js
-opmlToJSON(xmlString, function (error, json) {
-    var expected = {
-        "title": "title",
-        "children": [
-            {"text": "H1", "children": [
-                {"text": "H2 Text"},
-                {"text": "H2", "children": [
-                    {"text": "text"}
-                ]}
-            ]},
-            {"text": "H1 text"}
-        ]};
-    assert.deepEqual(json, expected);
-});
+import { opmlToJSON } from "opml-to-json";
+
+const json = await opmlToJSON(xml);
+const expected = {
+    "title": "title",
+    "children": [
+        {
+            "text": "H1", "children": [
+                { "text": "H2 Text" },
+                {
+                    "text": "H2", "children": [
+                        { "text": "text" }
+                    ]
+                }
+            ]
+        },
+        { "text": "H1 text" }
+    ]
+};
+assert.deepStrictEqual(json, expected);
 ```
 
 ## Contributing

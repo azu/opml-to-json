@@ -1,5 +1,6 @@
 {
   "name": "opml-to-json",
+  "version": "0.0.3",
   "description": "convert opml to json.",
   "keywords": [
     "json",
@@ -7,30 +8,35 @@
     "opml",
     "converter"
   ],
-  "version": "0.0.3",
   "homepage": "https://github.com/azu/opml-to-json/",
-  "repository": {
-    "url": "git://github.com/azu/opml-to-json.git"
-  },
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha test/*.js"
-  },
-  "directories": {
-    "test": "test/"
-  },
-  "author": "azu",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/azu/opml-to-json/issues"
   },
+  "repository": {
+    "url": "git://github.com/azu/opml-to-json.git"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "main": "lib/opml-to-json.js",
+  "types": "lib/opml-to-json.d.ts",
+  "directories": {
+    "test": "test/"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "prepublishOnly": "npm run build",
+    "test": "mocha \"test/**/*.{js,ts}\"",
+    "watch": "tsc -p . --watch"
+  },
   "dependencies": {
-    "opmlparser": "^0.6.0"
+    "opmlparser": "^0.8.0"
   },
   "devDependencies": {
-    "espower-loader": "^0.7.1",
-    "intelli-espower-loader": "^0.2.0",
-    "mocha": "^1.18.2",
-    "power-assert": "^0.7.2"
+    "@types/mocha": "^8.2.0",
+    "@types/node": "^14.14.19",
+    "mocha": "^8.2.1",
+    "ts-node": "^9.1.1",
+    "ts-node-test-register": "^9.0.1",
+    "typescript": "^4.1.3"
   }
 }
